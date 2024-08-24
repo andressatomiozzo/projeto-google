@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    background-color: green;
+}
+
+div#menu-hamburguer{
+    background-color: rgb(127, 170, 255);
+}
+
+div#menu-hamburguer > div{
+    background-color: aquamarine;
+}
+
+div#menu-hamburguer img{
+    height: 20px;
+}
+
+a.normal {
+    text-decoration: none;
+    color: black;
+}
+
+a.normal:hover {
+    text-decoration: underline;
+}
