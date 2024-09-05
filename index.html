@@ -6,13 +6,15 @@
     <title>Novo separador</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <nav>
             <a href="https://mail.google.com" class="normal">Gmail</a>
             <a href="https://www.google.com/imghp" class="normal">Imagens</a>
-            <div id="menu-hamburguer">
+            <abbr title="Google Apps"><span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">apps</span></abbr>
+            <menu id="menub">
                 <div>
                     <a href="https://myaccount.google.com">
                     <img src="imagens/conta.png" alt="Seu navegador não é compatível">Conta</a>
@@ -97,9 +99,17 @@
                     <a href="https://www.google.com/shopping">
                     <img src="imagens/compras.webp" alt="Seu navegador não é compatível">Compras</a>
                 </div>
+            </menu>
+            <div >
+                <abbr title="Conta Google"><img src="imagens/conta.png" alt="Imagem de identificação da donta do Google" id="conta"></abbr>
+                <menu id="menub">
             </div>
         </nav>
     </header>
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis minima possimus adipisci iste id earum placeat iure nulla tempora, dicta voluptates dolorum ipsam rem nihil in delectus commodi est molestiae?
+    </div>
 
     <main>
         <div id="google">
@@ -116,5 +126,15 @@
         </div>
     </main>
 
+
+    <script>
+        function clickMenu() {
+            if (menub.style.display == "block") {
+                menub.style.display = "none";
+            } else {
+                menub.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

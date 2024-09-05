@@ -7,30 +7,55 @@
 }
 
 body{
-    background-color: black;
+    background-color: lightblue;
 }
 
 nav{
     background-color: green;
+    display: flex;
+    
 }
 
-div#menu-hamburguer{
+menu {
     background-color: rgb(127, 170, 255);
+    display: none;
 }
 
-div#menu-hamburguer > div{
+#burguer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+menu > div{
     background-color: aquamarine;
+
 }
 
-div#menu-hamburguer img{
+span#burguer:hover {
+    background-color: rgba(0, 0, 0, 0.259);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+menu img{
     height: 20px;
 }
 
 a.normal {
     text-decoration: none;
-    color: black;
+    padding: 10px;
 }
 
 a.normal:hover {
     text-decoration: underline;
+}
+
+#conta {
+    width: 50px;
+}
+
+#conta:hover {
+
 }
